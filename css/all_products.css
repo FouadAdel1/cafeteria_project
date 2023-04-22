@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Mrs+Saint+Delafield&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+a{
+  text-decoration: none !important;
+}
+.all_products{
+  min-height: 100vh;
+  font-size: 18px;
+  text-transform: capitalize;
+  display: grid;
+  grid-template-rows:auto 1fr auto ;
+
+}
+@media(max-width:570px){
+  .usertable .bg-white{
+    overflow-x: scroll;
+  }
+}
+/* .usertable {
+  height: 100%;
+} */
+.table {
+  --bs-table-color: #ca8e46;
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--bs-border-color);
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #ca8e46;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: #ca8e46;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #ca8e46;
+  --bs-table-hover-bg: #edd19033;
+  color: var(--bs-table-color);
+}
+.addUser,
+.addUser:hover{
+  background-color:#CA8E46 ;
+  color: white;
+  border: transparent;
+  padding: 7px 15px;
+}
+.addUser a{
+color: white;
+}
+/* .btn .addUser:hover{
+background-color:#CA8E46 ;
+color: white;
+border: transparent;
+} */
+.editBtn,
+.submit {
+  background-color: #ca8e46;
+  color: white;
+  border: transparent;
+}
+.editBtn:hover,
+.submit:hover {
+  background-color: #ca8e46;
+  color: white;
+  border: transparent;
+}
+.pagination li {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.pagination li a {
+  background-color: transparent;
+  padding: 15px;
+  color: #ca8e46;
+  font-size: 20px;
+  border: transparent;
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: white;
+  background-color: #edd19033;
+}
+.invalid-feedback {
+  color: #d42738;
+}
+.active {
+  display: block !important;
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.file{
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+

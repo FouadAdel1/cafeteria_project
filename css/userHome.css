@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Mrs+Saint+Delafield&display=swap");
+*{
+    font-family: "Montserrat";
+}
+.pagination li
+{
+    margin: 10px;
+    cursor: pointer;
+}
+.add{
+    border-bottom: 2px solid #ca8e46;
+}
+.table-div{
+ 
+    height:60vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto  ;
+    /* position: absolute;
+    top: 35%;
+    right: 100px; */
+}
+
+.table-div h2,.table-div h3{
+    margin-top: 20px;
+    color: #ca8e46;
+    font-size: 16px;
+    color: black;
+}
+.btn-dark{
+    /* background-color: #ca8e46;
+    color: white; */
+    --bs-btn-bg: #ca8e46;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #ca8e46;
+    --bs-btn-border-color: #ca8e46;
+    --bs-btn-disabled-border-color: #ca8e46;
+    padding: 7px 17px;
+    margin-right: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+
+}
+.counter {
+    border:1px solid #ca8e46;
+}
+
+/* .card
+{
+    border: 0px solid transparent !important;
+} */
+.card img{
+    border: 0px solid transparent !important ;
+    /* border-radius: 10px; */
+}
+.card .card-body{
+
+    background-color: #edd19033;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid transparent;
+    color: black;
+   
+}
+.card .card-img-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid transparent;
+}
+/* .pagination li a
+{
+    background-color: transparent;
+    padding: 20px;
+    color: crimson;
+    border: none;
+    font-size: 20px;
+} */
+.pagination li
+{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.pagination li a
+{
+    background-color: transparent;
+padding: 15px;
+color: #CA8E46;
+    font-size: 20px;
+    border: transparent;
+}
+.page-link:hover {
+    z-index: 2;
+    color: white;
+    background-color: #edd19033;
+}
+.card img
+{
+    height: 300px;
+}
+
+/* .card-body
+{
+    background-color: rgb(234 234 234);
+} */
+.card-body h4
+{
+    font-family: 'Montserrat';
+    padding: 10px;
+}
+
+.card-body p
+{
+    font-family: 'Montserrat';
+    padding: 0px 10px 10px 10px; 
+}
+
+.form-control
+{
+    width: 50%;
+}
+
+.hidePagination
+{
+    display: none !important;
+}
+
+/* #row1
+{
+    border-bottom: 10px solid crimson;
+} */
+
+#cart
+{
+    background-color: black;
+    height: 600px;
+    /* delete the margin*/
+    margin-bottom: 50px;
+}

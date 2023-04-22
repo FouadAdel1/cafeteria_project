@@ -1,0 +1,266 @@
+/* checks page */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Mrs+Saint+Delafield&display=swap");
+*{
+  font-family: "Montserrat";
+}  
+.pagination-div li
+  {
+      margin: 10px;
+      cursor: pointer;
+  }
+  
+  .pagination-div li a
+  {
+      background-color: transparent;
+  padding: 15px;
+  color: #CA8E46;
+      font-size: 20px;
+      border: transparent;
+  }
+  .page-link:hover {
+      z-index: 2;
+      color: white;
+      background-color: #edd19033;
+  }
+  .card .card-body{
+
+    background-color: #edd19033;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid transparent;
+    color: black;
+   
+}
+.card .card-img-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid transparent;
+}
+
+  .input-group-text{
+    background-color: #CA8E46 !important;
+  }
+  .bi-calendar-date::before{
+    color: #fff !important;
+  }
+  
+  .form-floating>.bi-calendar-date+.datepicker_input+label {
+    padding-left: 3.5rem;
+    z-index: 3;
+  }
+  
+  #from,
+  #to,
+  #select{
+    background-color: #FBFBFB;
+  }
+  
+  .pcs,
+  .cur {
+    white-space: nowrap;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+  
+  }
+  
+  table {
+    position: relative;
+    width: 100%;
+  }
+  
+  table th {
+    text-align: left;
+    vertical-align: bottom;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #CA8E46;
+  }
+  
+  table th,
+  table td {
+    padding: .9em;
+  }
+  
+  table.fold-table,
+  table.fold-table-order {
+    /*background: white;*/
+    /*background: #fdfbff;*/
+    background-color: #FBFBFB;
+    color: #555;
+  }
+  
+  table.fold-table>tbody>tr.view,
+  table.fold-table-order>tbody>tr.view-order {
+    font-size: 1em;
+    font-family: "Montserrat";
+    transition: all 0.3s ease;
+  }
+  
+  table.fold-table>tbody>tr.view td,
+  table.fold-table>tbody>tr.view th,
+  table.fold-table-order>tbody>tr.view-order td,
+  table.fold-table-order>tbody>tr.view-order th {
+    cursor: pointer;
+  }
+  
+  table.fold-table>tbody>tr.view td:first-child,
+  table.fold-table>tbody>tr.view th:first-child,
+  table.fold-table-order>tbody>tr.view-order td:first-child,
+  table.fold-table-order>tbody>tr.view-order th:first-child {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  table.fold-table>tbody>tr.view td:first-child:before,
+  table.fold-table>tbody>tr.view th:first-child:before,
+  table.fold-table-order>tbody>tr.view-order td:first-child:before,
+  table.fold-table-order>tbody>tr.view-order th:first-child:before {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 9px;
+    height: 16px;
+    margin-top: -8px;
+    font: 16px fontawesome;
+    content: "";
+    transition: all 0.3s ease;
+  }
+  
+  table.fold-table>tbody>tr.view:nth-child(4n-1),
+  table.fold-table-order>tbody>tr.view-order:nth-child(4n-1) {
+    background: #edd19033;
+  }
+  
+  table.fold-table>tbody>tr.view:hover,
+  table.fold-table-order>tbody>tr.view-order:hover {
+    background: #edd19033;
+  }
+  
+  table.fold-table>tbody>tr.view.open,
+  table.fold-table-order>tbody>tr.view-order.open-order {
+    background: #CA8E46;
+    color: white;
+  }
+  
+  table.fold-table>tbody>tr.view.open td:first-child:before,
+  table.fold-table>tbody>tr.view.open th:first-child:before,
+  table.fold-table-order>tbody>tr.view-order.open-order td:first-child:before,
+  table.fold-table-order>tbody>tr.view-order.open-order th:first-child:before {
+    transform: rotate(-180deg);
+    color: white;
+  }
+  
+  table.fold-table>tbody>tr.fold,
+  table.fold-table-order>tbody>tr.fold-order {
+    display: none;
+  }
+  
+  table.fold-table>tbody>tr.fold.open,
+  table.fold-table-order>tbody>tr.fold-order.open-order {
+    display: table-row;
+  }
+  
+  .fold-content {
+    padding: 0.5em;
+  }
+  
+  .fold-content h3 {
+    margin-top: 0;
+  }
+  
+  .fold-content>table {
+    /*background: white;*/
+    /*background: #fdfbff;*/
+    background-color: #FBFBFB;
+    color: #555;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .fold-content>table>tbody>tr {
+    font-family: "Montserrat", serif;
+    cursor: pointer;
+  }
+  
+  .fold-content>table>tbody>tr:nth-child(even) {
+    background: #eee;
+  }
+  
+  .fold-content>table>tbody>tr:hover {
+    background: #ddd;
+  }
+  
+  .visible-small {
+    display: none;
+  }
+  
+  .visible-big {
+    display: block;
+  }
+  
+  @media (max-width: 700px) {
+    body {
+        font-size: 0.8em;
+        padding: 0 10px;
+    }
+  
+    table th,
+    table td {
+        padding: 1em 0.2em;
+    }
+  
+    table th {
+        vertical-align: bottom;
+        padding-bottom: 0;
+    }
+  
+    table.small-friendly>thead {
+        display: none;
+    }
+  
+    table.small-friendly>tbody>tr>td,
+    table.small-friendly>tbody>tr>th {
+        position: relative;
+        padding: 0;
+        padding-left: 50%;
+        display: block;
+        vertical-align:top;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+  
+    table.small-friendly>tbody>tr>td:before,
+    table.small-friendly>tbody>tr>th:before {
+        position: absolute;
+        top: 0;
+        left: 0.5em;
+        max-width: 50%;
+        content: attr(data-th) ": ";
+        display: block;
+        font-weight: bold;
+    }
+  
+    table.small-friendly>tbody>tr>td:first-child,
+    table.small-friendly>tbody>tr>th:first-child {
+        margin-top: 1em;
+    }
+  
+    table.small-friendly>tbody>tr>td:last-child,
+    table.small-friendly>tbody>tr>th:last-child {
+        margin-bottom: 1em;
+        border: 0;
+    }
+  
+    .visible-small {
+        display: block;
+    }
+  
+    .visible-big {
+        display: none;
+    }
+  }

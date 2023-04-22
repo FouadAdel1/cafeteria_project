@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All users</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/84e17ee5b7.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/all_users.css">
+</head>
+
+<body>
+  <div class="all_users ">
+   <!-- Start Navbar -->
+   <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <!-- <img alt="" src="./images/icon.png" /> -->
+
+        <span class="logo">Cafetria</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center " id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mx-auto mb-lg-0 text-white">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="adminHome.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="all_product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="all_users.html">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders.html">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tableCheck.html">checks</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <div>
+            <img id="user_img" src="" class="rounded-5" alt="" srcset="" width="40px" height="40px">
+          </div>
+          <span id="user_name" class="text-white mx-3 name"></span>
+          <button class="btn btn-primary" type="submit" id="log_out_btn">Log Out</button>
+       
+        </div>
+      </div>
+    </div>
+
+  </nav>
+    <!-- End Navbar -->
+
+    <div class="main bg-black">
+      <!-- all usera -->
+      <div class=" bg-black py-5 ">
+        <div class="container d-flex flex-wrap justify-content-between col-12">
+          <div class="col-3">
+            <h1 class="text-white">All Users</h1>
+          </div>
+          <!-- add link to register -->
+          <div class="col-3 "><button  class="btn addUser float-end"><a href="addUser.html" class="text-white">Add User</a></button></div>
+
+        </div>
+      </div>
+
+      <!-- Start user table -->
+      <section class="bg-black usertable  d-flex justifiy-content-center align-items-center">
+
+        <div class="bg-white w-75 mx-auto text-center py-3 rounded-4">
+          <table class="table table-hover ">
+            <thead>
+              <th>Name</th>
+              <th>Room</th>
+              <th>Image</th>
+              <th>Action</th>
+            </thead>
+            <tbody class="text-black"></tbody>
+          </table>
+        </div>
+      </section>
+      <!-- End user table -->
+
+
+
+      <!--Start Form Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content p-3">
+            <div class="modal-header">
+              <!-- " -->
+              <form class="row g-3 needs-validation" method="post" enctype="multipart/form-data"
+                Action="php/updateOneUser.php">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="col-md-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control " id="email" name="email" value="" required>
+                  <div class="invalid-feedback">
+
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" value="" required>
+                  <div class="valid-feedback">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="room" class="form-label">Room Number</label>
+                  <input type="number" class="form-control" id="room" name="room" value="" required>
+                  <div class="invalid-feedback">
+
+                  </div>
+                </div>
+                <div class="col-md-12  mb-3">
+                  <label for="imageName" class="form-label">profile image</label>
+                  <div class="input-group">
+                    <input type="text" name="imageName" class="form-control" value="" id="imageName"
+                      aria-label="Recipient's username" aria-describedby="button-upload">
+                    <button class="btn btn-outline-secondary btn-file" type="button"><i class="fa fa-cloud-arrow-up">
+                        <input id="button-upload" type='file' class="file" name="userImg" /></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="submit" name="id" class="btn btn-primary submit" type="submit">submit</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+
+
+          </div>
+
+
+
+          </form>
+        </div>
+      </div>
+      <!--End Form Modal -->
+    </div>
+
+    <div>
+      <!-- Start pagination -->
+      <div class="pagination bg-black d-flex justify-content-center pt-3">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination" id="pagination">
+
+          </ul>
+        </nav>
+      </div>
+
+      <!-- End pagination -->
+
+
+
+
+
+
+
+      <!-- Start Footer -->
+      <footer class="py-4 bg-black text-white">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="d-flex footer-text">
+            <p>@Copyright 2022 - Stradate Target Team</p>
+          </div>
+
+          <div class="footer-i d-flex">
+
+            <div class="social"><i class="fab fa-facebook-f"></i></div>
+            <div class="social"><i class="fab fa-twitter"></i></div>
+            <div class="social"><i class="fab fa-instagram"></i></div>
+            <div class="social"><i class="fab fa-linkedin-in"></i></div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/all_users.js"></script>
+  <script src="js/session.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,518 @@
+/*for style rigester  for register massage error*/
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Mrs+Saint+Delafield&display=swap");
+/* 
+main colors
+#CA8E46  
+#fff
+#000
+
+
+#151517
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+a{
+  text-decoration: none !important;
+}
+
+/*------ navbar ----- */
+.nav-link:hover{
+  color: #fff;
+}
+.navbar-expand-lg {
+  background-color: #000000f7;
+}
+nav .logo {
+  color: #ca8e46;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Mrs Saint Delafield";
+  letter-spacing: 2px;
+}
+nav .btn a:hover{
+ color:  #ca8e46;
+}
+nav .nav-item a {
+  color: #fff;
+  margin-right: 15px;
+  font-weight: 500;
+}
+/* nav .nav-item a:hover {
+  color: #ca8e46;
+} */
+
+nav .btn,
+.addUser {
+  text-align: center;
+  border-radius: 0px;
+  outline: 0;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 30px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ca8e46;
+}
+nav .btn:hover {
+  background-color: #ca8e46;
+  color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+/* start login */
+
+.login .login_backimg {
+  background-image: url(../images/background/5.jpg);
+  height: 100vh;
+}
+.login .login_backimg .overlay {
+  height: 100%;
+  background-color: #00000030;
+}
+.login .register {
+  color: #ca8e46;
+  text-decoration: none;
+  font-size: 16px;
+}
+.login .forgot {
+  color: #fff3cd;
+  text-decoration: none;
+  font-size: 16px;
+}
+.login .forgot:hover {
+  text-decoration: underline;
+}
+.form {
+  background-color: #000000c9;
+  border-radius: 20px;
+  box-shadow: 0px 1px 6px -1px rgba(202, 142, 70, 0.38);
+}
+.form label {
+  color: #ca8e46;
+  font-size: 17px;
+  font-weight: 500;
+}
+.form .btn {
+  margin: 10px 5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  outline: 0;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  background-color: #ca8e46;
+}
+.invalid-feedback {
+  color: #d42738;
+}
+.active {
+  display: block !important;
+
+}
+/* ----- footer ------ */
+
+.footer-i i{
+    color: white;
+    background-color: #CA8E46;
+   
+    border-radius: 50%;
+    margin: 4px;
+    padding: 15px;
+}
+/*FOOTER*/
+.footer-i i {
+  color: white;
+  background-color: #ca8e46;
+
+  border-radius: 50%;
+  margin: 4px;
+  padding: 15px;
+}
+
+/* ---- header ----- */
+header img {
+  height: 100%;
+  width: 100%;
+}
+header .carousel-item {
+  height: 90vh;
+}
+
+.carousel-item .content {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  width: 60%;
+}
+
+.carousel-item h3 {
+  font-size: 110px;
+  line-height: 0.75em;
+  margin-bottom: 20px;
+  font-family: "Mrs Saint Delafield";
+  color: #ca8e46;
+  font-weight: 400;
+}
+
+.carousel-item h1 {
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.carousel-item .btn {
+  text-align: center;
+  color: #fff;
+  border-radius: 0px;
+  outline: 0;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 30px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ca8e46;
+}
+.carousel-item .btn:hover {
+  color: #ca8e46;
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+/* ----- about -------- */
+.about h5 span {
+  font-size: 100px;
+  line-height: 0.75em;
+  margin-bottom: 20px;
+  font-family: "Mrs Saint Delafield";
+  color: #ca8e46;
+  font-weight: 400;
+}
+.about h2 {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: -20px;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+.about p {
+  color: #999999;
+}
+
+/* ----- location --------- */
+
+.backimg {
+  background-image: url(../images/background/3.jpg);
+  height: 70vh;
+}
+.backimg .overlay .location {
+  position: relative;
+  width: 100%;
+  top: 25%;
+}
+@media (max-width: 700px){
+  body{
+    padding: 0px  !important;
+    margin:0px ;
+    box-sizing: border-box;
+  }
+  .backimg {
+    background-image: url(../images/background/3.jpg);
+    height: 100vh;
+  }
+  .backimg .overlay .location {
+    position: relative;
+    width: 100%;
+    top: 0%;
+    height: 100vh;
+  }
+
+}
+.backimg .overlay {
+  height: 100%;
+  background-color: #00000030;
+}
+.backimg .overlay .location i {
+  font-size: 30px;
+  color: #ca8e46;
+  padding-bottom: 20px;
+}
+.location span {
+  color: #999999;
+  font-size: 15px;
+}
+
+/* ------ quote --------- */
+.quote h2 {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ----- footer ------ */
+.footer-i i {
+  color: white;
+  background-color: #ca8e46;
+
+  border-radius: 50%;
+  margin: 4px;
+  padding: 15px;
+}
+
+.footer-i i:hover {
+  color: #ca8e46;
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+/* -------------------------------------------------------------------------- */
+/* checks page */
+.navbar .navbar-collapse .active{
+  color: #CA8E46;
+}
+.input-group-text{
+  background-color: #CA8E46 !important;
+}
+.bi-calendar-date::before{
+  color: #fff !important;
+}
+
+.form-floating>.bi-calendar-date+.datepicker_input+label {
+  padding-left: 3.5rem;
+  z-index: 3;
+}
+
+#from,
+#to,
+#select{
+  background-color: #FBFBFB;
+}
+
+.pcs,
+.cur {
+  white-space: nowrap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+
+}
+
+table {
+  position: relative;
+  width: 100%;
+}
+
+table th {
+  text-align: left;
+  vertical-align: bottom;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #CA8E46;
+}
+
+table th,
+table td {
+  padding: .9em;
+}
+
+table.fold-table,
+table.fold-table-order {
+  /*background: white;*/
+  /*background: #fdfbff;*/
+  background-color: #FBFBFB;
+  color: #555;
+}
+
+table.fold-table>tbody>tr.view,
+table.fold-table-order>tbody>tr.view-order {
+  font-size: 1em;
+  font-family: "Montserrat";
+  transition: all 0.3s ease;
+}
+
+table.fold-table>tbody>tr.view td,
+table.fold-table>tbody>tr.view th,
+table.fold-table-order>tbody>tr.view-order td,
+table.fold-table-order>tbody>tr.view-order th {
+  cursor: pointer;
+}
+
+table.fold-table>tbody>tr.view td:first-child,
+table.fold-table>tbody>tr.view th:first-child,
+table.fold-table-order>tbody>tr.view-order td:first-child,
+table.fold-table-order>tbody>tr.view-order th:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+
+table.fold-table>tbody>tr.view td:first-child:before,
+table.fold-table>tbody>tr.view th:first-child:before,
+table.fold-table-order>tbody>tr.view-order td:first-child:before,
+table.fold-table-order>tbody>tr.view-order th:first-child:before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 9px;
+  height: 16px;
+  margin-top: -8px;
+  font: 16px fontawesome;
+  content: "";
+  transition: all 0.3s ease;
+}
+
+table.fold-table>tbody>tr.view:nth-child(4n-1),
+table.fold-table-order>tbody>tr.view-order:nth-child(4n-1) {
+  background: #eee;
+}
+
+table.fold-table>tbody>tr.view:hover,
+table.fold-table-order>tbody>tr.view-order:hover {
+  background: #ddd;
+}
+
+table.fold-table>tbody>tr.view.open,
+table.fold-table-order>tbody>tr.view-order.open-order {
+  background: #CA8E46;
+  color: white;
+}
+
+table.fold-table>tbody>tr.view.open td:first-child:before,
+table.fold-table>tbody>tr.view.open th:first-child:before,
+table.fold-table-order>tbody>tr.view-order.open-order td:first-child:before,
+table.fold-table-order>tbody>tr.view-order.open-order th:first-child:before {
+  transform: rotate(-180deg);
+  color: white;
+}
+
+table.fold-table>tbody>tr.fold,
+table.fold-table-order>tbody>tr.fold-order {
+  display: none;
+}
+
+table.fold-table>tbody>tr.fold.open,
+table.fold-table-order>tbody>tr.fold-order.open-order {
+  display: table-row;
+}
+
+.fold-content {
+  padding: 0.5em;
+}
+
+.fold-content h3 {
+  margin-top: 0;
+}
+
+.fold-content>table {
+  /*background: white;*/
+  /*background: #fdfbff;*/
+  background-color: #FBFBFB;
+  color: #555;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fold-content>table>tbody>tr {
+  font-family: "Montserrat", serif;
+  cursor: pointer;
+}
+
+.fold-content>table>tbody>tr:nth-child(even) {
+  background: #eee;
+}
+
+.fold-content>table>tbody>tr:hover {
+  background: #ddd;
+}
+
+.visible-small {
+  display: none;
+}
+
+.visible-big {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  body {
+      font-size: 0.8em;
+      padding: 0 10px;
+  }
+
+  table th,
+  table td {
+      padding: 1em 0.2em;
+  }
+
+  table th {
+      vertical-align: bottom;
+      padding-bottom: 0;
+  }
+
+  table.small-friendly>thead {
+      display: none;
+  }
+
+  table.small-friendly>tbody>tr>td,
+  table.small-friendly>tbody>tr>th {
+      position: relative;
+      padding: 0;
+      padding-left: 50%;
+      display: block;
+      vertical-align: top;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  table.small-friendly>tbody>tr>td:before,
+  table.small-friendly>tbody>tr>th:before {
+      position: absolute;
+      top: 0;
+      left: 0.5em;
+      max-width: 50%;
+      content: attr(data-th) ": ";
+      display: block;
+      font-weight: bold;
+  }
+
+  table.small-friendly>tbody>tr>td:first-child,
+  table.small-friendly>tbody>tr>th:first-child {
+      margin-top: 1em;
+  }
+
+  table.small-friendly>tbody>tr>td:last-child,
+  table.small-friendly>tbody>tr>th:last-child {
+      margin-bottom: 1em;
+      border: 0;
+  }
+
+  .visible-small {
+      display: block;
+  }
+
+  .visible-big {
+      display: none;
+  }
+}

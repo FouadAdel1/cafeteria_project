@@ -1,0 +1,152 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Mrs+Saint+Delafield&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Montserrat";
+}
+
+
+
+/*------ navbar ----- */
+.navbar-expand-lg{
+  background-color:#000000f7;
+}
+/* .navbar-toggler-icon {
+  background-color: #CA8E46;
+
+} */
+
+
+nav .logo{
+  color: #CA8E46;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Mrs Saint Delafield";
+  letter-spacing: 2px;
+}
+nav .nav-item a{
+  color: #fff;
+  margin-right: 15px;
+  font-weight: 500; 
+  font-size: 16px;
+
+}
+nav .nav-item a:hover{
+  color: #CA8E46;
+}
+.nav-link:focus, .nav-link:hover {
+  color: #CA8E46;
+}
+
+nav .name{
+  font-size: 16px;
+}
+nav .icon { 
+  text-align: center;
+  color: #ca8e46;
+  border-radius: 0px;
+  outline: 0;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 0px;
+  padding-top: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding-top: 4px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+nav .icon:hover{
+  color: #CA8E46;
+  background-color:none;
+  transition: .5s all ease-in-out;
+
+}
+.icon.show{
+  
+    color: #CA8E46;
+    background-color: transparent;
+    border-color:transparent
+}
+.icon:hover {
+  color: transparent;
+  background-color: transparent;
+  border-color:transparent
+}
+#log_out_btn {
+  text-align: center;
+  color: #fff;
+  border-radius: 0px;
+  outline: 0;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ca8e46;
+  margin-left: 15px  ;
+}
+
+/* .dropdown-menu{
+  background-color: #CA8E46;
+  --bs-dropdown-zindex: 1000;
+  --bs-dropdown-min-width: 0rem;
+  --bs-dropdown-padding-x: 0;
+  --bs-dropdown-padding-y: 0rem;
+}
+.dropdown-menu:hover{
+  background-color: white;
+  transition: .5s all ease-in-out;
+}
+.dropdown-item{
+  text-align: center;
+  color: #fff;
+  border-radius: 0px;
+  outline: 0;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 3px 13px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.dropdown-item:hover{
+  background-color: transparent;
+  color: #CA8E46;
+} */
+
+
+/* ----- footer ------ */
+.footer-i .social{
+  color: white;
+  background-color: #CA8E46;
+ 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+}
+.footer-i i{
+ font-size: 16px; 
+}
+.footer-i .social:hover{
+color: #CA8E46;
+background-color: white;
+transition: .5s all ease-in-out;
+}

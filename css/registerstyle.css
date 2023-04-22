@@ -1,0 +1,128 @@
+/*for style rigester  for register massage error*/
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Mrs+Saint+Delafield&display=swap");
+/* 
+main colors
+#CA8E46  
+#fff
+#000
+
+
+#151517
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+/*------ navbar ----- */
+.navbar-expand-lg {
+  background-color: #000000f7;
+}
+nav .logo {
+  color: #ca8e46;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Mrs Saint Delafield";
+  letter-spacing: 2px;
+}
+nav .nav-item a {
+  color: #fff;
+  margin-right: 15px;
+  font-weight: 500;
+}
+nav .nav-item a:hover {
+  color: #ca8e46;
+}
+nav .btn {
+  text-align: center;
+  color: #fff;
+  border-radius: 0px;
+  outline: 0;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 30px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ca8e46;
+}
+nav .btn:hover {
+  color: #ca8e46;
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+/* start login */
+
+.login .login_backimg {
+  background-image: url(../images/background/5.jpg);
+  height: 100vh;
+}
+.login .login_backimg .overlay {
+  height: 100%;
+  background-color: #00000030;
+}
+.login .register {
+  color: #ca8e46;
+  text-decoration: none;
+  font-size: 16px;
+}
+.login .forgot {
+  color: #fff3cd;
+  text-decoration: none;
+  font-size: 16px;
+}
+.login .forgot:hover {
+  text-decoration: underline;
+}
+.form {
+  background-color: #000000c9;
+  border-radius: 20px;
+  box-shadow: 0px 1px 6px -1px rgba(202, 142, 70, 0.38);
+}
+.form label {
+  color: #ca8e46;
+  font-size: 17px;
+  font-weight: 500;
+}
+.form .btn {
+  margin: 10px 5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  outline: 0;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  background-color: #ca8e46;
+}
+.invalid-feedback {
+  color: #d42738;
+}
+.active {
+  display: block !important;
+}
+/*FOOTER*/
+.footer-i i {
+  color: white;
+  background-color: #ca8e46;
+
+  border-radius: 50%;
+  margin: 4px;
+  padding: 15px;
+}
+.footer-i i:hover {
+  color: #ca8e46;
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+}
